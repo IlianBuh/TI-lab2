@@ -106,7 +106,7 @@
                              Margin="0 0 0 10"/>
                     <TextBox Style="{StaticResource ModernTextBox}"
                            x:Name="txtInput"
-                           MinHeight="150" Height="331" VerticalScrollBarVisibility="Visible" />
+                           MinHeight="150" Height="331" VerticalScrollBarVisibility="Visible" IsReadOnly="True"/>
 
                     <Separator Margin="0 15" Background="#3D4654"/>
 

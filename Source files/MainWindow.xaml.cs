@@ -54,6 +54,7 @@ public partial class MainWindow : Window
         this.fileName = "";
         this.fileContent = null;
         this.encrFile = null;
+        this.BtnClear_Click(null, null);
 
         txtStatus.Text = "File saved successfully";
 
@@ -66,7 +67,7 @@ public partial class MainWindow : Window
             return;
         }
 
-        string lfsrInitVal = LFSR.getBinValue(this.txtLSFRValue.Text, 4);
+        string lfsrInitVal = LFSR.getBinValue(this.txtLSFRValue.Text, LFSR.InitLength);
 
         LFSR register = new(lfsrInitVal, LFSR.InitLength);
 
